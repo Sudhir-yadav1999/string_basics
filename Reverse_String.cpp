@@ -7,7 +7,8 @@ Approach 2: Two Pointers, Iteration, mathcal{O}(1)O(1) Space
 ---------------------
 Two Pointers Approach
 ---------------------
-In this approach, two pointers are used to process two array elements at the same time. Usual implementation is to set one pointer in the beginning and one at the end and then to move them until they both meet.
+In this approach, two pointers are used to process two array elements at the same time.
+Usual implementation is to set one pointer in the beginning and one at the end and then to move them until they both meet.
 
 Sometimes one needs to generalize this approach in order to use three pointers, like for classical Sort Colors problem.
 ---------
