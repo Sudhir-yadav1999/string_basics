@@ -1,4 +1,5 @@
-C++ program to display a string entered by user.
+-----------------------------------------------
+C++ program to display a string entered by user
 -----------------------------------------------
 #include <iostream>
 using namespace std;
@@ -17,7 +18,7 @@ int main()
 
     return 0;
 }
-
+---------------------------------
 C++ String to read a line of text
 ---------------------------------
 #include <iostream>
@@ -64,7 +65,7 @@ int main()
     return 0;
 }
 
-
+---------------------------
 String object into function 
 ---------------------------
 #include <iostream>
@@ -115,6 +116,89 @@ int main()
 
     return 0;
 }
+
+-----------------------
+String Length Functions 
+-----------------------
+
+1) Strcpy
+int main()
+{
+   char str[100];
+   cout<<"Enter the string "<<endl;
+   cin.get(str,100);
+   char str1[100];
+   
+   strcpy(str1,str);
+   display(str1);
+ 
+
+    return 0;
+}
+2)Strlen
+
+    int x=strlen(s);
+    for(int i=0;i<x;i++)
+   {
+       cout<<s[i]<<endl;
+   }
+---------------------
+Two strings are equal
+---------------------
+    bool equal=true;
+  if(str1.length()!=str2.length())
+  {
+      equal=false;
+  }
+  else
+  {
+    for(int i=0;i<str1.length();i++)
+    {
+        if(str1[i]!= str2[i])
+        {
+         equal=0;
+         break;
+        }
+    }
+      
+  }
+ cout<<equal<<endl;
+-----------------------
+
+----------------------------------------------
+|compare the string is subset of other or not|
+----------------------------------------------
+    
+ int main()
+{
+  
+  char str[100];
+  char str2[100];
+  char *p;
+  
+  cout<<"Enter the string str1 ";
+  cin.getline(str,100);
+  
+  cout<<"Enter the another string ";
+  cin.getline(str2,100);
+  
+  p = strstr(str,str2);
+  
+  if(p!=NULL)
+  {
+   cout<<"The string contanins value"<<endl;
+  }
+  else
+  {
+   cout<<"The string does not contanins value"<<endl;   
+  }
+    return 0;
+}
+
+
+
+
+
 
 
 
