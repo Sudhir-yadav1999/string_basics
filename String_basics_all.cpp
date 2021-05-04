@@ -164,7 +164,26 @@ Two strings are equal
   }
  cout<<equal<<endl;
 -----------------------
-
+3)strcat
+int main()
+{
+  
+  char str[100];
+  char str2[100];
+  char *p;
+  
+  cout<<"Enter the string str1 ";
+  cin.getline(str,100);
+  
+  cout<<"Enter the another string ";
+  cin.getline(str2,100);
+  
+  strcat(str,str2);
+  
+  cout<<str<<endl;
+  
+    return 0;
+}
 ----------------------------------------------
 |compare the string is subset of other or not|
 ----------------------------------------------
