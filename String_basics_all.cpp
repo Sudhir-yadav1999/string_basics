@@ -213,8 +213,55 @@ int main()
   }
     return 0;
 }
+----------------------------------------------------
+Finding the occurance of starting and ending of char
+----------------------------------------------------
+The strchr function returns the first occurrence of a character within a string. 
+The strrchr returns the last occurrence of a character within a string. 
+They return a character pointer to the character found, or NULL pointer if the character is not found. 
 
+These character pointers are simply the address of the character found within the array.
+If we subtract the starting address from this address, 
+then we'll find the index of the character.
+For example, say we're searching character 'b' in the string "abcd". Say, the string starts at memory address 100.
+The string "abcd" would look in memory as follows:
 
+ a     b     c     d
+100   101   102   103
+We see that
+
+Index of 'b' = Address of 'b' - Address of 'a'
+             = 101 - 100
+             = 1
+The starting address of the array can be accessed by the array name. So the index is calculated as follows:
+
+int position = position_ptr - str;
+int r_position = r_position_ptr - str;
+ ----
+|Code|
+ ----
+int main()
+{
+  
+  char str[100]="finding first and last occurrence of a character is amazing";
+  char str2[100]="abcdef";
+  char *pos;
+  char *q_pos;
+  
+  
+  for(int i=0;i<strlen(str2);i++)
+  {
+  
+  pos=strchr(str,str2[i]);
+  q_pos=strrchr(str,str2[i]);
+  
+  int position=(pos!=NULL) ?  pos-str:-1 ;
+  int last_position=(q_pos!=NULL) ?  q_pos-str:-1 ;
+  
+  cout<<"First occurance of char  "<<str2[i]<<"  is :"<<position <<"And last char position is  "<<last_position<<endl;
+  }
+  
+  
 
 
 
