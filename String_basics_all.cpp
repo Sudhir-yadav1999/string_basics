@@ -261,8 +261,30 @@ int main()
   cout<<"First occurance of char  "<<str2[i]<<"  is :"<<position <<"And last char position is  "<<last_position<<endl;
   }
   
+  -------------------------------
+  First occurance pointer of word 
+  -------------------------------
+  1)strpbrk :- You provide two strings to strpbrk. If any character from second string is found in the first string,
+               strpbrk will return a character pointer to the first occurrence.
+  int main()
+  {
   
-
+  char str[100]="finding digits where there could be digit 5236 is amazing";
+  char str2[100]="0123456789";
+  char *p;
+ 
+  p=strpbrk(str,str2);//return a pointer to first occurence of the word
+  
+  if(p!=NULL)
+  {
+   cout<<str<<" : "<<" from bag of str2 ie "<<str2<<" is "<< p<<endl;   
+  }
+  else
+  {
+      cout<<"Null value";
+  }
+    return 0;
+  }
 
 
 
