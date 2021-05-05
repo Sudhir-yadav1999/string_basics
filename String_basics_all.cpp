@@ -365,7 +365,30 @@ Function is Strncmp()-Compares the ascii values of two words if both ascii value
   
     return 0;
 }
-     
+-----------------------------
+remove alphabet from a string
+-----------------------------
+ 
+    
+int main(){
+
+string str="Hello,have a good day";
+string str1;
+char a;
+
+for(int i=0;i<str.length();i++)
+{
+    if(str[i] == 'a'||str[i] == 'e'||str[i] == 'i'||str[i] == 'o'||str[i] == 'u')
+    {
+        continue;
+    }
+    else
+    {
+       cout<<str[i]; 
+    }
+}
+
+
 
 
 
