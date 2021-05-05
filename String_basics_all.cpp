@@ -285,10 +285,87 @@ int main()
   }
     return 0;
   }
+     
+     
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Some different funtion in cpp for strings 
+-----------------------------------------
+strlen	calculates the length of string
+strcat	Appends one string at the end of another
+  strncat	Appends first n characters of a string at the end of another
+strcpy	Copies a string into another
+  strncpy	Copies first n characters of one string into another
+strcmp	Compares two strings
+  strncmp	Compares first n characters of two strings
+strchr	Finds first occurrence of a given character in a string
+strrchr	Finds last occurrence of a given character in a string
+strstr	Finds first occurrence of a given string in another string
+---------------------    
+Function is Strncat()
+---------------------
+ int main()
+{
+  
+  char str[100]="Hello this is sudhir";
+  char str2[100]=" yadav loves coding : he is a developer";
+  
+ 
+  strncat(str,str2,11);//first 11 character from string str2 concat to string str like yadav love concat to hello this is sudhir 
+  cout<<"String is Now :"<<str<<endl;
+  
+    return 0;
+}
+    
 
 
-
-
+--------------------
+Function is Strncpy()
+--------------------
+int main()
+{
+  
+  char str[100]="";
+  char str2[100]=" yadav loves coding";
+  
+ 
+  strncpy(str,str2,11);//first 11 character from string str2 copied to string str
+  cout<<"String is Now :"<<str<<endl;
+  
+    return 0;
+}
+--------------------
+Function is Strncmp()-Compares the ascii values of two words if both ascii values are equal then word is same 
+--------------------
+ A positive value is returned, 
+ if a character of str1 and str2 doesn’t match before the num characters and the ASCII value of str1 character is greater than ASCII value of str2  
+ 
+  int main()
+{
+  
+  char str[100]="akash";
+  char str2[100]="aksh";
+  
+ 
+  int val=strncmp(str,str2,4);
+  
+  if(val==0)
+  {
+      cout<<"Two strings are equal";
+  }
+  else if (val>0)
+  {
+    
+    cout<<"Str is greater than str"<<endl;
+  }
+  else
+  {
+    cout<<"str2 is greater than str"<<endl;   
+  }
+ 
+  
+    return 0;
+}
+     
 
 
 
