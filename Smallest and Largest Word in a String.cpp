@@ -3,6 +3,17 @@
 Program to find Smallest and Largest Word in a String
 -----------------------------------------------------
 
+Given a string, find the minimum and the maximum length words in it.
+Examples:
+
+Input : "This is a test string"
+Output : Minimum length word: is
+         Maximum length word: string
+
+Input : "GeeksforGeeks A computer Science portal for Geeks"
+Output : Minimum length word: A
+         Maximum length word: GeeksforGeeks
+         
 #include <iostream>
 #include <string>
 #include<bits/stdc++.h>
