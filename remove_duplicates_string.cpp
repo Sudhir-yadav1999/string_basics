@@ -21,19 +21,16 @@ string removeDups(string str)
 	}
   TIme complexity : 0(n)
   
+	  
+Methord -2
 
-
-#include <bits/stdc++.h>
-using namespace std;
-
-char *removeDuplicate(char str[], int n)
+string removeDups(string str) 
 {
-
-int index = 0;
-	
+    int index = 0;
+    string result;
 // Traverse through all characters
 
-for (int i=0; i<n; i++) {
+for (int i=0; i<str.size(); i++) {
 		
 	// Check if str[i] is present before it
 	
@@ -41,7 +38,6 @@ for (int i=0; i<n; i++) {
 	for (j=0; j<i; j++)
 		if (str[i] == str[j])
 		{
-		    cout<<str[i]<<endl;
 		  break;
 		}
 	
@@ -50,14 +46,13 @@ for (int i=0; i<n; i++) {
 	
 	if (j == i)
 	{	
-	    cout<<"The value of j and i is :"<<endl;
-	    cout<<" value :"<<str[i]<<endl;
-	  str[index++] = str[i];
+	  
+	  result += str[i];
 
 	}
 	}
 	
-return str;
+return result;
 }
 
 // Driver code
