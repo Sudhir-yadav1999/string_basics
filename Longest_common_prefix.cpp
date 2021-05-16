@@ -1,4 +1,5 @@
-Given a array of N strings, find the longest common prefix among all strings present in the array.
+Given a array of N strings, 
+find the longest common prefix among all strings present in the array.
 
 Example 1:
 
@@ -17,7 +18,7 @@ arr[] = {hello, world}
 Output: -1
 Explanation: There's no common prefix
 in the given strings.
-
+------------------------------------------
 
 #include<bits/stdc++.h>
 using namespace std;
