@@ -100,9 +100,6 @@ The important thing to note is, time complexity to compare two count arrays is O
 3) The last window is not checked by above loop, so explicitly check it
 
 
-
-
-
 #include<iostream>
 #include<cstring>
 #define MAX 256
@@ -164,4 +161,5 @@ int main()
 	cout << "No";
 	return 0;
 }
-
+Time complexity -O(N)
+	
